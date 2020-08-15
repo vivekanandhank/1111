@@ -1,0 +1,77 @@
+require(magrittr)
+require(data.table)
+require(highcharter)
+require(ggplot2)
+require(dplyr)
+require(ggmap)
+require(rjson)
+require(anytime)
+require(forecast)
+
+
+# Reading the data
+
+crime = fread("../input/london_crime_by_lsoa.csv", header = T)
+head(crime)
+str(crime)
+dim(crime)
+
+# Which number of major category of crime are most in London ?
+
+c1 = crime[value > 0] %>% .[,.(sum = sum(value)),by = major_category]
+hchart(c1, 'pie', hcaes(x = major_category, y = sum, color = sum)) %>%
+  hc_title(text = "Sum of major_category") %>%
+  hc_add_theme(hc_theme_darkunica())
+  
+# How do the sum of crimes vary by borough ?
+
+c5 = crime[, .(sum = sum(value)), by = .(borough, major_category)] %>%
+  .[order(sum)]
+hchart(c5,'column', hcaes(x = borough, y = sum, group = major_category)) %>%
+  hc_add_theme(hc_theme_flatdark()) %>%
+  hc_plotOptions(column = list(stacking = 'normal')) %>%
+  hc_legend(align = 'right', float = T)
+  
+head(borough)
+
+c6 = crime[, .(sum = sum(value)), by = borough][order(sum)]
+c6 %<>% left_join(borough, c6, by = "borough")
+
+map = get_googlemap("london", zoom = 10)
+ggmap(map, darken = 0.3) + 
+  geom_point(data = c6, aes(lon, lat, size = sum, color = sum, alpha = sum)) +
+  scale_color_gradient(low = "yellow", high = "red")
+  
+ How do the sum of crimes vary by year?
+ 
+ c1.5 = crime[,.(sum = sum(value)), by = year][order(year)]
+hchart(c1.5, 'line', hcaes(year, sum)) %>%
+  hc_add_theme(hc_theme_flatdark())
+  
+ 
+# How do the number of each major category of crimes vary by year?
+
+c2 = crime[value>0] %>% 
+  .[,.(sum = sum(value)), by = .(major_category, year)] %>%
+  .[order(major_category, year)]
+
+hchart(c2, "line",hcaes(year, sum, color = major_category, group = major_category)) %>%
+  hc_yAxis(text = "sum") %>%
+  hc_add_theme(hc_theme_flatdark())
+
+# Time Series of the number of crimes over time
+
+c3 = crime[, .(sum = sum(value)), by = .(month, year)] %>%
+  .[,date := paste0(year,'/',month) %>% anydate ] %>%
+  .[order(year, month, sum)]
+c3$year %<>% as.character() %<>% as.factor
+c3$month %<>% as.factor
+
+hchart(c3, "line", hcaes(date, sum)) %>%
+  hc_add_theme(hc_theme_flatdark())
+  
+What makes this project interesting most is the chart below.
+
+hchart(c3, "line", hcaes(x = month, y = sum, color = year, group = year)) %>%
+  hc_add_theme(hc_theme_flatdark()) %>%
+  hc_xAxis(categories = month.abb)
