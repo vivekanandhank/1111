@@ -1,153 +1,231 @@
 <!--meta {"title": "About Us", "description": "Founded in 2020, Jurong Digital Solutions is a Singapore-based industrial technology company enabling immersive, intelligent and insight-driven operations.", "nav": "about"} -->
-<section class="hero hero--page on-dark">
-  {{circuit:circuit--hero}}
+
+<!-- ============ HERO: AR viewfinder ============ -->
+<section class="ax-hero on-dark">
+  <span class="ax-hero__year" aria-hidden="true">2020</span>
+  <svg class="ax-hero__traces" viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <path d="M0 520 H260 L300 480 H520"/><circle cx="530" cy="480" r="7"/>
+    <path d="M0 600 H180 L230 650 H640"/><circle cx="650" cy="650" r="7"/>
+    <path d="M1440 120 H1240 L1200 160 H1010"/><circle cx="1000" cy="160" r="7"/>
+    <path d="M1440 60 H1300 L1270 30 H1120"/><circle cx="1110" cy="30" r="6"/>
+  </svg>
+  <div class="container ax-hero__grid">
+    <div class="ax-hero__copy">
+      <nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li><span aria-current="page">About Us</span></li></ol></nav>
+      <span class="eyebrow">About Jurong Digital Solutions</span>
+      <h1 class="ax-hero__title">We help industry <em>see</em>, <em>train</em> &amp; <em>act</em> smarter.</h1>
+      <p class="lead">Founded in 2020 in Singapore, JDS helps enterprises move from traditional operations to immersive, intelligent and insight-driven ecosystems.</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="#story">Our story {{icon:arrow icon icon--arrow}}</a>
+        <a class="btn btn--ghost" href="contact.html?topic=consultation">Talk to us</a>
+      </div>
+    </div>
+
+    <figure class="viewfinder" aria-label="Illustration: an AR view of an industrial site with detection labels">
+      <span class="viewfinder__corner viewfinder__corner--tl"></span><span class="viewfinder__corner viewfinder__corner--tr"></span>
+      <span class="viewfinder__corner viewfinder__corner--bl"></span><span class="viewfinder__corner viewfinder__corner--br"></span>
+      <div class="viewfinder__hud"><span class="viewfinder__rec"></span>LIVE · SITE VIEW<span class="viewfinder__hud-right">JDS · XR</span></div>
+      <svg class="viewfinder__scene" viewBox="0 0 480 360" aria-hidden="true">
+        <!-- plant -->
+        <g class="scene-line">
+          <rect x="30" y="130" width="90" height="150" rx="10"/><ellipse cx="75" cy="130" rx="45" ry="12"/>
+          <path d="M30 175h90M30 220h90"/>
+          <path d="M120 170h70v-40h60"/><path d="M120 240h110v40h40"/>
+          <rect x="250" y="100" width="70" height="60" rx="6"/><path d="M262 118h46M262 134h46"/>
+          <path d="M320 130h60v150"/><path d="M380 180h60"/>
+          <path d="M0 300h480"/>
+          <path d="M360 90l20-40 20 40z"/>
+        </g>
+        <!-- worker -->
+        <g class="scene-worker">
+          <path d="M196 200c0-14 10-24 22-24s22 10 22 24z"/>
+          <circle cx="218" cy="212" r="12"/>
+          <path d="M200 300v-48c0-12 8-20 18-20s18 8 18 20v48"/>
+        </g>
+        <circle class="scene-tag" cx="285" cy="178" r="7"/>
+        <!-- detections -->
+        <g class="det det--blue">
+          <rect class="det__box" x="20" y="108" width="110" height="182" rx="6"/>
+          <rect class="det__tag" x="20" y="84" width="156" height="20" rx="4"/>
+          <text x="28" y="98">DIGITAL TWIN · LINKED</text>
+        </g>
+        <g class="det det--2">
+          <rect class="det__box" x="186" y="166" width="64" height="140" rx="6"/>
+          <rect class="det__tag" x="186" y="142" width="136" height="20" rx="4"/>
+          <text x="194" y="156">PPE ✓ HELMET · VEST</text>
+        </g>
+        <g class="det det--3">
+          <rect class="det__box det__box--dash" x="268" y="161" width="34" height="34" rx="6"/>
+          <rect class="det__tag" x="268" y="200" width="104" height="20" rx="4"/>
+          <text x="276" y="214">ASSET TAG · QR</text>
+        </g>
+      </svg>
+      <span class="viewfinder__scan" aria-hidden="true"></span>
+      <figcaption class="viewfinder__foot">
+        <span>{{icon:vr icon icon--sm}}Train</span><span>{{icon:scan icon icon--sm}}Track</span><span>{{icon:cctv icon icon--sm}}Monitor</span>
+      </figcaption>
+    </figure>
+  </div>
+
   <div class="container">
-    <nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li><span aria-current="page">About Us</span></li></ol></nav>
-    <span class="eyebrow">About Jurong Digital Solutions</span>
-    <h1 class="h1" style="margin-top:16px">Empowering industrial transformation <span class="accent">since 2020</span></h1>
-    <p class="lead">A Singapore-based industrial technology company helping enterprises move from traditional operations to immersive, intelligent and insight-driven ecosystems.</p>
-    <dl class="facts">
+    <dl class="hud-stats">
       <div><dt>Founded</dt><dd>2020</dd></div>
-      <div><dt>Headquarters</dt><dd>Singapore</dd></div>
-      <div><dt>Core platforms</dt><dd>3</dd></div>
-      <div><dt>Industries served</dt><dd>8</dd></div>
+      <div><dt>Based in</dt><dd>Singapore</dd></div>
+      <div><dt>Core platforms</dt><dd>03</dd></div>
+      <div><dt>Industries served</dt><dd>08</dd></div>
     </dl>
   </div>
 </section>
 
-<!-- Who we are -->
-<section class="section" aria-labelledby="who-title">
-  <div class="container about-intro">
-    <div class="reveal">
-      <span class="eyebrow">Who we are</span>
-      <h2 class="h2" id="who-title">Technology built with the people who run critical operations</h2>
-    </div>
-    <div class="about-intro__body reveal" data-delay="80">
-      <p class="lead">Founded in 2020, JDS enables enterprises to transition from traditional operations to immersive, intelligent and insight-driven ecosystems.</p>
-      <p>We work alongside engineers, operators, safety managers and quality leaders in power, energy, construction, oil &amp; gas, transport and manufacturing — replacing paper, guesswork and risky on-the-job learning with tools designed for the field.</p>
-    </div>
-  </div>
-</section>
-
-<!-- What we specialise in -->
-<section class="section section--soft" aria-labelledby="spec-title">
+<!-- ============ MANIFESTO ============ -->
+<section class="section manifesto" id="story" aria-labelledby="story-title">
   <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">What we specialise in</span>
-      <h2 class="h2" id="spec-title">Three capabilities, one connected operation</h2>
+    <span class="eyebrow reveal">Who we are</span>
+    <h2 class="manifesto__text reveal" id="story-title">
+      We close the gap between <span class="strike">manual processes</span> and <mark>smart automation</mark> — for the people who keep <span class="ink">critical industries</span> running.
+    </h2>
+    <div class="manifesto__cols reveal">
+      <p>We enable critical industries to digitise their safety, training, operations and compliance workflows using immersive technologies like AR/VR, AI-powered video analytics and smart field data systems.</p>
+      <p>We work with teams on the ground — engineers, operators, safety managers and quality leaders — across power, energy, construction, oil &amp; gas, transport and manufacturing.</p>
     </div>
-    <ol class="spec-list">
-      <li class="reveal">
-        <span class="spec-list__num">01</span>
-        <span class="spec-list__icon">{{icon:vr icon icon--lg}}</span>
-        <div>
-          <h3>Immersive VR/AR Safety &amp; Skills Training</h3>
-          <p>Realistic simulations that let teams practise hazardous tasks and emergency response without real-world risk.</p>
-        </div>
-        <a class="link-arrow" href="immersive-training.html">Explore<span class="sr-only"> Immersive Training</span> {{icon:arrow}}</a>
-      </li>
-      <li class="reveal" data-delay="60">
-        <span class="spec-list__num">02</span>
-        <span class="spec-list__icon">{{icon:scan icon icon--lg}}</span>
-        <div>
-          <h3>Smart Field Asset Management via DDAM</h3>
-          <p>Smart labels and digital twins that put manuals, drawings and maintenance history one scan away.</p>
-        </div>
-        <a class="link-arrow" href="ddam.html">Explore<span class="sr-only"> DDAM</span> {{icon:arrow}}</a>
-      </li>
-      <li class="reveal" data-delay="120">
-        <span class="spec-list__num">03</span>
-        <span class="spec-list__icon">{{icon:cctv icon icon--lg}}</span>
-        <div>
-          <h3>AI Video Analytics for Compliance, Safety &amp; Quality</h3>
-          <p>AiVA turns existing CCTV into real-time alerts for PPE, zone breaches and quality defects.</p>
-        </div>
-        <a class="link-arrow" href="aiva.html">Explore<span class="sr-only"> AiVA</span> {{icon:arrow}}</a>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- Vision & mission -->
-<section class="section" aria-labelledby="vm-title">
-  <div class="container">
-    <h2 class="sr-only" id="vm-title">Vision and mission</h2>
-    <div class="vm-clean">
-      <div class="vm-clean__vision reveal">
-        <span class="eyebrow">Our vision</span>
-        <p class="vm-clean__statement">To digitally empower frontline workers and operations in critical industries through immersive technologies and intelligent automation.</p>
-      </div>
-      <div class="vm-clean__mission reveal" data-delay="80">
-        <span class="eyebrow">Our mission</span>
-        <ol class="mission-list">
-          <li><span>01</span>Replace outdated industrial processes with smart, connected and visual-first solutions.</li>
-          <li><span>02</span>Ensure safer, faster and more traceable field operations.</li>
-          <li><span>03</span>Democratise access to advanced training and real-time analytics.</li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Why choose JDS -->
-<section class="section band on-dark" aria-labelledby="why-title">
-  {{circuit:circuit--hero}}
-  <div class="container">
-    <div class="section-head section-head--split reveal">
-      <div>
-        <span class="eyebrow">Why choose JDS</span>
-        <h2 class="h2" id="why-title" style="margin-top:14px">A partner built for high-stakes operations</h2>
-      </div>
-      <p class="lead">When downtime and safety errors aren’t an option, experience and integration matter as much as the technology.</p>
-    </div>
-    <ul class="why-list reveal">
-      <li>{{icon:award icon icon--lg}}<div><h3>Proven track record</h3><p>Delivered in high-risk industries across energy, steel, transport and education.</p></div></li>
-      <li>{{icon:plug icon icon--lg}}<div><h3>Integration-ready</h3><p>Works with ERP, DCS, BIM and the systems you already run.</p></div></li>
-      <li>{{icon:phone-mobile icon icon--lg}}<div><h3>Modular &amp; mobile-first</h3><p>Scalable deployment on headsets, tablets, phones and smart glasses.</p></div></li>
-      <li>{{icon:shield icon icon--lg}}<div><h3>Government-trusted partners</h3><p>Partnered with government-trusted integrators.</p></div></li>
-      <li>{{icon:layers icon icon--lg}}<div><h3>Cross-sector experience</h3><p>Strong implementation experience across industries and site types.</p></div></li>
+    <ul class="role-chips reveal" aria-label="Who we work with">
+      <li>{{icon:users icon icon--sm}}Engineers</li>
+      <li>{{icon:hardhat icon icon--sm}}Operators</li>
+      <li>{{icon:shield icon icon--sm}}Safety managers</li>
+      <li>{{icon:award icon icon--sm}}Quality leaders</li>
     </ul>
   </div>
 </section>
 
-<!-- Clients -->
-<section class="section" aria-labelledby="clients-title">
+<!-- ============ CAPABILITIES: expanding panels ============ -->
+<section class="section caps-section on-dark" aria-labelledby="caps-title">
+  <div class="container">
+    <div class="section-head section-head--split reveal">
+      <div>
+        <span class="eyebrow">What we specialise in</span>
+        <h2 class="h2" id="caps-title" style="margin-top:14px">Three capabilities.<br>One connected operation.</h2>
+      </div>
+      <p class="lead">Together they cover the full loop: prepare your people, equip the field and watch over the site.</p>
+    </div>
+    <ul class="caps">
+      <li class="cap">
+        <span class="cap__num">01</span>
+        <span class="cap__icon">{{icon:vr icon icon--lg}}</span>
+        <h3 class="cap__title">Immersive VR/AR Safety &amp; Skills Training</h3>
+        <div class="cap__body">
+          <p>Practise hazardous tasks, emergency response and machinery handling in realistic simulations, without real-world risk.</p>
+          <a class="link-arrow" href="immersive-training.html">Explore Immersive Training {{icon:arrow}}</a>
+        </div>
+      </li>
+      <li class="cap">
+        <span class="cap__num">02</span>
+        <span class="cap__icon">{{icon:scan icon icon--lg}}</span>
+        <h3 class="cap__title">Smart Field Asset Management via DDAM</h3>
+        <div class="cap__body">
+          <p>Smart labels and digital twins put manuals, drawings and maintenance history one scan away, on phone, tablet or smart glasses.</p>
+          <a class="link-arrow" href="ddam.html">Explore DDAM {{icon:arrow}}</a>
+        </div>
+      </li>
+      <li class="cap">
+        <span class="cap__num">03</span>
+        <span class="cap__icon">{{icon:cctv icon icon--lg}}</span>
+        <h3 class="cap__title">AI Video Analytics for Compliance, Safety &amp; Quality</h3>
+        <div class="cap__body">
+          <p>AiVA turns existing CCTV into real-time alerts for PPE, zone breaches and quality defects.</p>
+          <a class="link-arrow" href="aiva.html">Explore AiVA {{icon:arrow}}</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ VISION + MISSION circuit ============ -->
+<section class="section" aria-labelledby="vision-title">
+  <div class="container vision">
+    <div class="vision__lead reveal">
+      <span class="eyebrow">Our vision</span>
+      <h2 class="vision__text" id="vision-title">To digitally empower <span>frontline workers</span> and operations in critical industries through immersive technologies and intelligent automation.</h2>
+    </div>
+    <div class="reveal" data-delay="100">
+      <span class="eyebrow">Our mission</span>
+      <ol class="circuit-steps">
+        <li><h3>Replace</h3><p>Outdated industrial processes with smart, connected and visual-first solutions.</p></li>
+        <li><h3>Ensure</h3><p>Safer, faster and more traceable field operations.</p></li>
+        <li><h3>Democratise</h3><p>Access to advanced training and real-time analytics.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY: bento ============ -->
+<section class="section section--soft" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow eyebrow--center">Why choose JDS</span>
+      <h2 class="h2" id="why-title">Built for places where mistakes are expensive</h2>
+    </div>
+    <ul class="bento">
+      <li class="bento__item bento__item--hero reveal">
+        {{circuit:circuit--cta}}
+        <span class="bento__icon">{{icon:award icon icon--lg}}</span>
+        <h3>Proven track record in high-risk industries</h3>
+        <p>Deployed for teams in energy, steel, transport and education, where training and safety can’t be left to chance.</p>
+      </li>
+      <li class="bento__item reveal" data-delay="60"><span class="bento__icon">{{icon:plug icon icon--lg}}</span><h3>Integration-ready</h3><p>ERP, DCS, BIM and more.</p></li>
+      <li class="bento__item reveal" data-delay="120"><span class="bento__icon">{{icon:phone-mobile icon icon--lg}}</span><h3>Modular &amp; mobile-first</h3><p>Scalable deployment on any device.</p></li>
+      <li class="bento__item reveal" data-delay="180"><span class="bento__icon">{{icon:shield icon icon--lg}}</span><h3>Government-trusted partners</h3><p>Delivered with government-trusted integrators.</p></li>
+      <li class="bento__item bento__item--accent reveal" data-delay="240"><span class="bento__icon">{{icon:layers icon icon--lg}}</span><h3>Cross-sector experience</h3><p>Strong implementation experience across industries.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CLIENTS: marquee ============ -->
+<section class="section clients" aria-labelledby="clients-title">
   <div class="container">
     <div class="section-head section-head--split reveal">
       <div>
         <span class="eyebrow">Trusted by leading clients</span>
-        <h2 class="h2" id="clients-title" style="margin-top:14px">Supporting digital initiatives across industry leaders</h2>
+        <h2 class="h2" id="clients-title" style="margin-top:14px">In use from university labs to pre-commissioning sites</h2>
       </div>
-      <p class="lead">From university labs to pre-commissioning sites, here’s where our work is in use today.</p>
+      <div style="display:flex;justify-content:flex-end;gap:12px;align-items:center;flex-wrap:wrap">
+        <button class="marquee-toggle" type="button" aria-pressed="false">{{icon:clock icon icon--sm}}<span>Pause</span></button>
+        <a class="link-arrow" href="resources.html">Read the case studies {{icon:arrow}}</a>
+      </div>
     </div>
-    <ul class="client-list reveal">
+  </div>
+  <div class="marquee reveal" data-marquee>
+    <ul class="marquee__track">
       <li><strong>Baker Hughes</strong><span>VR training for pre-commissioning</span></li>
       <li><strong>NUS</strong><span>Virtual BSL-3 lab access</span></li>
       <li><strong>SBS Transit</strong><span>AR-guided engine dismantling</span></li>
       <li><strong>SP Polytechnic</strong><span>AI-based crew behaviour analysis</span></li>
       <li><strong>Nippon Steel</strong><span>Site visualisation in the Metaverse</span></li>
     </ul>
-    <div class="reveal" style="margin-top:28px"><a class="link-arrow" href="resources.html">Read the case studies {{icon:arrow}}</a></div>
   </div>
 </section>
 
-<!-- Partners -->
-<section class="section section--soft" id="partners" aria-labelledby="partners-title">
-  <div class="container">
-    <div class="section-head section-head--center reveal">
-      <span class="eyebrow eyebrow--center">Strategic partners</span>
-      <h2 class="h2" id="partners-title">Full-stack delivery with world-class innovators</h2>
-      <p class="lead">We collaborate with technology and engineering partners to deliver complete industrial solutions.</p>
+<!-- ============ PARTNERS: orbit ============ -->
+<section class="section partners on-dark" id="partners" aria-labelledby="partners-title">
+  <div class="container partners__grid">
+    <div class="split__body reveal">
+      <span class="eyebrow">Strategic partners</span>
+      <h2 class="h2" id="partners-title">An ecosystem for full-stack delivery</h2>
+      <p class="lead">We collaborate with world-class technology and engineering innovators to deliver complete industrial solutions, from hardware and 3D content to AI and consulting.</p>
     </div>
-    <ul class="partner-grid reveal">
-      <li>3Si</li>
-      <li>Aura Interact</li>
-      <li>SixD Engineering Solutions</li>
-      <li>Myraa Technologies</li>
-      <li>Terravawe</li>
-      <li>E6 Ai</li>
-      <li>Pragyaa Consultants</li>
-    </ul>
+    <div class="orbit reveal" data-delay="100">
+      <span class="orbit__ring orbit__ring--1" aria-hidden="true"></span>
+      <span class="orbit__ring orbit__ring--2" aria-hidden="true"></span>
+      <div class="orbit__core"><img src="assets/img/jds-logo.png" alt="JDS" width="96" height="44" loading="lazy"></div>
+      <ul class="orbit__list" aria-label="Partners">
+        <li style="--i:0">3Si</li>
+        <li style="--i:1">Aura Interact</li>
+        <li style="--i:2">SixD Engineering Solutions</li>
+        <li style="--i:3">Myraa Technologies</li>
+        <li style="--i:4">Terravawe</li>
+        <li style="--i:5">E6 Ai</li>
+        <li style="--i:6">Pragyaa Consultants</li>
+      </ul>
+    </div>
   </div>
 </section>
 

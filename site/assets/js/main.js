@@ -121,6 +121,24 @@
     });
   }
 
+  /* Client marquee: duplicate items for a seamless loop, with a pause control */
+  document.querySelectorAll("[data-marquee]").forEach((marquee) => {
+    const track = marquee.querySelector(".marquee__track");
+    Array.from(track.children).forEach((item) => {
+      const clone = item.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      track.appendChild(clone);
+    });
+    const toggle = marquee.closest("section").querySelector(".marquee-toggle");
+    if (toggle) {
+      toggle.addEventListener("click", () => {
+        const paused = marquee.classList.toggle("is-paused");
+        toggle.setAttribute("aria-pressed", String(paused));
+        toggle.querySelector("span").textContent = paused ? "Play" : "Pause";
+      });
+    }
+  });
+
   /* Footer year */
   document.querySelectorAll("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
 })();
