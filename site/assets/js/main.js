@@ -3,11 +3,7 @@
   document.documentElement.classList.remove("no-js");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* Header shadow on scroll */
   const header = document.querySelector(".header");
-  const onScroll = () => header && header.classList.toggle("is-scrolled", window.scrollY > 8);
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
 
   /* Mobile nav */
   const toggle = document.querySelector(".nav-toggle");
@@ -29,7 +25,7 @@
   }
 
   /* Solutions submenu (click/keyboard; hover handled in CSS on desktop) */
-  document.querySelectorAll(".nav__item--has-menu").forEach((item) => {
+  document.querySelectorAll(".has-menu").forEach((item) => {
     const btn = item.querySelector("button");
     const set = (open) => { item.dataset.open = String(open); btn.setAttribute("aria-expanded", String(open)); };
     btn.addEventListener("click", () => set(item.dataset.open !== "true"));
@@ -62,7 +58,10 @@
         document.getElementById(t.getAttribute("aria-controls")).hidden = !selected;
       });
       if (focus) tab.focus();
-      tab.scrollIntoView({ block: "nearest", inline: "nearest", behavior: reduceMotion ? "auto" : "smooth" });
+      // Keep the selected tab visible in the horizontal strip (small screens) without scrolling the page.
+      if (tablist.scrollWidth > tablist.clientWidth) {
+        tablist.scrollTo({ left: tab.offsetLeft - tablist.offsetLeft - 16, behavior: reduceMotion ? "auto" : "smooth" });
+      }
       if (push) history.replaceState(null, "", "#" + tab.dataset.slug);
     };
     tabs.forEach((tab, i) => {
@@ -120,24 +119,6 @@
       }, 700);
     });
   }
-
-  /* Client marquee: duplicate items for a seamless loop, with a pause control */
-  document.querySelectorAll("[data-marquee]").forEach((marquee) => {
-    const track = marquee.querySelector(".marquee__track");
-    Array.from(track.children).forEach((item) => {
-      const clone = item.cloneNode(true);
-      clone.setAttribute("aria-hidden", "true");
-      track.appendChild(clone);
-    });
-    const toggle = marquee.closest("section").querySelector(".marquee-toggle");
-    if (toggle) {
-      toggle.addEventListener("click", () => {
-        const paused = marquee.classList.toggle("is-paused");
-        toggle.setAttribute("aria-pressed", String(paused));
-        toggle.querySelector("span").textContent = paused ? "Play" : "Pause";
-      });
-    }
-  });
 
   /* Footer year */
   document.querySelectorAll("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));

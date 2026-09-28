@@ -1,32 +1,35 @@
 <!--meta {"title": "Contact", "description": "Talk to Jurong Digital Solutions about VR training, smart field operations or AI video analytics for your site. Book a free consultation.", "nav": "contact"} -->
-<section class="hero hero--page on-dark">
-  {{circuit:circuit--hero}}
+<section class="page-hero">
   <div class="container">
-    <nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li><span aria-current="page">Contact</span></li></ol></nav>
-    <span class="eyebrow">Let’s start your digital journey</span>
-    <h1 class="h1" style="margin-top:16px">Ready to reimagine your training, tracking &amp; compliance?</h1>
-    <p class="lead">Let’s talk about how we can reduce downtime, increase safety and unlock operational efficiency.</p>
+    <nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="index.html">Home</a></li><li><span aria-current="page">Contact</span></li></ol></nav>
+    <div class="page-hero__grid">
+      <div>
+        <p class="label"><span>Contact</span>Let’s start your digital journey</p>
+        <h1 class="h1">Ready to reimagine your training, tracking and compliance?</h1>
+        <p class="lead">Let’s talk about how we can reduce downtime, increase safety and unlock operational efficiency.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="section section--soft" id="enquiry" aria-label="Contact">
-  <div class="container contact">
-    <div class="split__body reveal">
-      <h2 class="h3">Talk to our team</h2>
-      <p style="color:var(--text-muted)">Tell us a little about your site and goals. Our team will follow up with next steps — or the brochure you asked for.</p>
-      <div class="contact-info">
-        <a href="mailto:{{email}}"><span class="card__icon">{{icon:mail}}</span><span><small>Email</small><strong>{{email}}</strong></span></a>
-        <a href="tel:{{phone_href}}"><span class="card__icon">{{icon:phone}}</span><span><small>Phone</small><strong>{{phone}}</strong></span></a>
-        <div><span class="card__icon">{{icon:pin}}</span><span><small>Office</small><strong>Singapore</strong></span></div>
+<section class="section" id="enquiry" aria-label="Contact">
+  <div class="container cols cols--5-7">
+    <div class="stack stack--lg reveal">
+      <p class="label"><span>01</span>Talk to our team</p>
+      <h2 class="h2">Tell us about your site and goals</h2>
+      <p class="muted">Share a little about your operation and our team will follow up with next steps — or the brochure you asked for.</p>
+      <div class="contact-list">
+        <a class="contact-list__item" href="mailto:{{email}}"><span class="cell__icon">{{icon:mail}}</span><span><small>Email</small><strong>{{email}}</strong></span></a>
+        <a class="contact-list__item" href="tel:{{phone_href}}"><span class="cell__icon">{{icon:phone}}</span><span><small>Phone</small><strong>{{phone}}</strong></span></a>
+        <div><span class="cell__icon">{{icon:pin}}</span><span><small>Office</small><strong>Singapore</strong></span></div>
       </div>
-      <ul class="checklist">
+      <ul class="ticks">
         <li>Free consultation &amp; needs assessment</li>
         <li>CAPEX, OPEX or hybrid commercial models</li>
         <li>PDPA &amp; GDPR-aligned data handling</li>
       </ul>
     </div>
-
-    <form class="form reveal" id="enquiry-form" data-delay="100" novalidate aria-labelledby="form-title">
+    <form class="form reveal" id="enquiry-form" novalidate aria-labelledby="form-title">
       <h2 class="h3" id="form-title">Send an enquiry</h2>
       <div class="form__status" role="status" tabindex="-1">{{icon:check}}Thanks — your enquiry has been received. Our team will be in touch shortly.</div>
       <div class="form__row">

@@ -1,0 +1,218 @@
+[
+  {
+    "file": "immersive-training.html",
+    "name": "Immersive Safety & Operations Training",
+    "short": "Immersive Training",
+    "description": "VR and CBT training from JDS that mirrors real job environments and risks, cutting training time by 60% while improving readiness and safety.",
+    "topic": "training",
+    "brochure": "Modules brochure",
+    "tagline": "Train without risk. Operate with confidence.",
+    "title": "Immersive Safety &amp; Operations Training",
+    "lead": "Revolutionise workforce readiness through interactive, high-impact simulations that mirror actual job environments and risks.",
+    "facts": [["Training time", "−60%"], ["Typical deployment", "2–4 weeks"], ["Delivery", "VR · Desktop · Tablet"], ["Reporting", "LMS-ready"]],
+    "overview": {
+      "label": "The challenge",
+      "title": "Traditional training doesn’t prepare people for real-life scenarios",
+      "paras": [
+        "At JDS, we transform how industrial teams are trained with immersive, interactive simulations that mirror actual job environments and risks.",
+        "Whether it’s high-risk process operations, safety drills or machinery maintenance, our VR and CBT modules deliver faster learning, deeper understanding and safer execution."
+      ]
+    },
+    "offerings": {
+      "label": "Key offerings",
+      "title": "Five ways to train your workforce",
+      "lead": "Combine immersive VR with web-based CBT to match each role, risk and device.",
+      "cols": 3,
+      "items": [
+        {"icon": "vr", "title": "VR-Based Operations &amp; Maintenance", "text": "Replicate complex procedures and equipment handling in fully interactive 3D environments."},
+        {"icon": "shield", "title": "VR-Based Safety Training", "text": "Step into virtual high-risk scenarios to practise hazard recognition, emergency response and PPE compliance."},
+        {"icon": "users", "title": "Avatar-Based Safety Induction (SIC)", "text": "New joiners go through animated, interactive onboarding simulations led by AI avatars."},
+        {"icon": "phone-mobile", "title": "Computer-Based Training (CBT)", "text": "Web-based modules for process flows, SOPs and safety rules, accessible from any device."},
+        {"icon": "chart", "title": "Simulation-Based Assessments", "text": "Real-time feedback and skill evaluation post-training, integrated with performance dashboards."},
+        {"icon": "headset", "title": "Hardware options", "text": "We can supply, recommend or integrate with your existing devices, such as Meta Quest or HTC Vive."}
+      ]
+    },
+    "use_cases": [
+      "Pre-site safety inductions for new joiners",
+      "Equipment-specific operations &amp; troubleshooting",
+      "Hazard walkthroughs for contractors &amp; vendors",
+      "Refresher training for shutdown/turnaround periods",
+      "Large-scale site familiarisation before mobilisation"
+    ],
+    "benefits": [
+      "60% reduction in training time",
+      "Real-world risk awareness without real danger",
+      "Improved retention and worker readiness",
+      "Fewer onsite incidents &amp; violations",
+      "Mobile-friendly &amp; accessible anytime",
+      "Standardised training across teams"
+    ],
+    "steps_title": "From training gap to live programme",
+    "steps": [
+      ["Needs assessment", "We identify your job roles, risk zones and training gaps."],
+      ["Module mapping", "We map your procedures to VR/CBT learning objectives."],
+      ["Simulation design", "Custom immersive scenarios, or adapted from our ready modules."],
+      ["Deployment", "Delivered via VR headsets, desktops or tablets."],
+      ["Performance tracking", "Scores, simulation logs and behaviour reports sent to your LMS."],
+      ["Support &amp; updates", "Content refreshes, analytics reviews and new modules."]
+    ],
+    "faqs": [
+      ["Can the VR/CBT modules be customised for our plant or equipment?", "Yes. We develop bespoke training simulations based on your SOPs, 3D environments and plant layout."],
+      ["Do you provide hardware for VR training?", "We can supply, recommend or integrate with your existing devices (Meta Quest, HTC Vive, etc.)."],
+      ["How do you measure learning outcomes or safety awareness?", "Our system tracks user performance, scores, error rates and completion, with analytics dashboards for HR or EHS leads."],
+      ["How long does deployment take?", "VR/CBT modules can typically be deployed in 2–4 weeks, depending on content complexity."]
+    ],
+    "cta_title": "See the training modules in action",
+    "cta_text": "Download the modules brochure or book a walkthrough with our team."
+  },
+  {
+    "file": "ddam.html",
+    "name": "DDAM – Smart Field Operations & Asset Management",
+    "short": "DDAM",
+    "description": "DDAM by JDS digitises asset tracking, inspection and document access with smart labelling and digital twin visualisation for industrial sites.",
+    "topic": "ddam",
+    "brochure": "DDAM brochure",
+    "tagline": "From chaos to control in field operations",
+    "title": "Smart Field Operations &amp; Asset Management",
+    "lead": "DDAM (Data-Driven Asset Management) transforms asset tracking, inspection and document access through Smart Labelling and Digital Twin Visualisation.",
+    "facts": [["Inspections", "30–40% faster"], ["Tag methods", "4"], ["Works", "Online &amp; offline"], ["Hosting", "Cloud or hybrid"]],
+    "overview": {
+      "label": "The challenge",
+      "title": "Frontline workers need the right information at the right time",
+      "paras": [
+        "In high-risk, asset-heavy industries, most facilities still rely on paper-based manuals or outdated systems.",
+        "DDAM is designed for industrial B2B environments like power plants, oil &amp; gas, maritime and logistics. Once scanned, each label provides real-time access to:"
+      ],
+      "list": ["O&amp;M manuals", "Engineering drawings (P&amp;IDs, layouts)", "Historical maintenance records", "Compliance certificates &amp; safety info"]
+    },
+    "offerings": {
+      "label": "Smart labelling system",
+      "title": "Four ways to turn assets into intelligent access points",
+      "lead": "Choose the identification method that suits each asset and environment, from quick QR scans to rugged metal tags.",
+      "cols": 4,
+      "items": [
+        {"icon": "scan", "title": "QR code tagging", "text": "For quick scanning on-site."},
+        {"icon": "shield", "title": "Metal-engraved tags", "text": "For harsh outdoor and industrial conditions."},
+        {"icon": "eye", "title": "OCR serial recognition", "text": "Extract data from legacy nameplates."},
+        {"icon": "pin", "title": "GPS-based anchoring", "text": "Map equipment across large facilities."}
+      ]
+    },
+    "features": {
+      "label": "Digital twin &amp; platform",
+      "title": "Bring field assets to life with spatially mapped replicas",
+      "lead": "See real-time data overlays, visualise internal structures in AR and follow step-by-step procedures on mobile, tablet or smart glasses — integrated with your IoT or ERP system.",
+      "items": [
+        ["Field-ready access", "Works on tablet, phone or smart glasses."],
+        ["Cloud-synced repository", "Auto-sync the latest drawings &amp; SOPs."],
+        ["Document traceability", "Every scan logged with a timestamp."],
+        ["Custom tagging options", "Fit for brownfield or greenfield sites."],
+        ["Live updates", "Push real-time updates across all devices."],
+        ["Role-based permissions", "Control what users see or edit."]
+      ]
+    },
+    "use_cases": [
+      "Power plants — identify valves, switchgear and piping systems",
+      "Offshore rigs — quick SOP access in explosion-proof zones",
+      "Chemical plants — emergency response route visualisations",
+      "Logistics/warehousing — track assets and update inventory",
+      "Factory shop floors — scan equipment for maintenance history",
+      "Field inspections — log activity and attach images instantly"
+    ],
+    "benefits": [
+      "Speeds up field inspections by 30–40%",
+      "Eliminates paper-based confusion",
+      "Improves asset traceability and accountability",
+      "Enhances training with real-world digital overlays",
+      "Prepares your site for audits &amp; compliance at any time",
+      "Enables remote support and real-time document access"
+    ],
+    "steps_title": "Five steps to a smart field",
+    "steps": [
+      ["Asset mapping &amp; tag selection", "The right tag for every asset and environment."],
+      ["Document upload &amp; association", "Manuals, drawings and records linked to each asset."],
+      ["Platform setup &amp; customisation", "Roles, permissions and integrations configured."],
+      ["Deployment &amp; training", "Tags installed and field teams trained."],
+      ["Go live + continuous monitoring", "Ongoing monitoring, updates and support."]
+    ],
+    "faqs": [
+      ["What is smart labelling, and how does it work?", "Smart labelling uses QR codes, OCR, metal tags or GPS identifiers to digitise every asset for instant data access via phone, tablet or smart glasses."],
+      ["Can we store our data on our servers instead of yours?", "Yes. We support hybrid cloud setups — sensitive data can remain on your on-prem server, and general data on ours."],
+      ["Does it work offline in remote or offshore locations?", "Yes. Offline syncing is supported for field conditions like offshore rigs or warehouses with weak connectivity."]
+    ],
+    "cta_title": "Ready to digitise your field?",
+    "cta_text": "Download the DDAM brochure or talk to our team about a pilot at your site."
+  },
+  {
+    "file": "aiva.html",
+    "name": "AiVA – AI Video Analytics & Compliance Monitoring",
+    "short": "AiVA",
+    "description": "AiVA by JDS turns standard CCTV into a real-time decision platform for PPE compliance, zone safety, KPI analytics and AI vision quality inspection.",
+    "topic": "aiva",
+    "brochure": "AiVA brochure",
+    "tagline": "See what matters. Act before it’s too late.",
+    "title": "AI Video Analytics &amp; Compliance Monitoring",
+    "lead": "Most industrial surveillance systems only record. AiVA turns them into proactive intelligence — a real-time decision-making platform built on your existing CCTV.",
+    "facts": [["Cameras", "Most IP CCTV"], ["Deployment", "Edge + cloud"], ["Alerts", "Real time"], ["Privacy", "PDPA &amp; GDPR"]],
+    "overview": {
+      "label": "The challenge",
+      "title": "Surveillance that only records is a missed opportunity",
+      "paras": [
+        "JDS’s AI-powered Video Analytics (AiVA) transforms standard CCTV into a real-time decision-making platform.",
+        "From safety compliance to performance tracking and quality inspection, AiVA gives industrial leaders the power to see more, react faster and improve outcomes on the ground."
+      ]
+    },
+    "offerings": {
+      "label": "Key offerings",
+      "title": "Safety, performance and quality from one AI engine",
+      "cols": 3,
+      "items": [
+        {"icon": "shield", "title": "Safety &amp; security monitoring", "bullets": ["Detect missing PPE (helmets, vests, goggles)", "Alert when workers enter restricted or hazardous zones", "Monitor tool usage compliance in sensitive areas", "Send instant alerts to supervisors or control centres"]},
+        {"icon": "chart", "title": "Performance &amp; KPI analytics", "bullets": ["Track worker activity and presence in operational zones", "Visualise productivity trends and task completion", "Analyse shift-wise engagement &amp; dwell time", "Enable data-driven coaching and manpower planning"]},
+        {"icon": "eye", "title": "Quality inspection with AI vision", "bullets": ["Robotic arm cameras detect defects in assemblies", "Drones inspect rooftops, tall structures and inaccessible zones", "Rover robots scan pipelines or confined areas", "Defect-detection ML models for predictive quality control"]}
+      ]
+    },
+    "features": {
+      "label": "Platform features",
+      "title": "Built for industrial scale",
+      "items": [
+        ["Real-time alerting", "Fire, fall and PPE violations flagged instantly."],
+        ["Multi-camera AI engine", "Central brain, decentralised view."],
+        ["Edge + cloud deployments", "Scalable for factories, plants &amp; offshore."],
+        ["Self-learning models", "Models get smarter with use."],
+        ["Audit logs", "Timestamped records for every incident."],
+        ["ERP/dashboard integration", "Trigger tickets or compliance reports."]
+      ]
+    },
+    "use_cases": [
+      "Manufacturing plants — detect unsafe behaviour, enforce protocols",
+      "Construction sites — monitor scaffolding, PPE and boundary zones",
+      "Oil &amp; gas rigs — ensure flameproof PPE and heat-zone compliance",
+      "Drone surveys — check cracks, rust and sealant failures",
+      "Robotic QA systems — inspect welding lines, electrical boards or packing",
+      "Warehouse ops — track forklift routes and worker congestion"
+    ],
+    "benefits": [
+      "Respond to incidents in real time",
+      "Ensure full audit trails for safety compliance",
+      "Reduce human error in inspections",
+      "Accelerate issue detection and root-cause analysis",
+      "Unlock hidden insights from surveillance data",
+      "Boost site safety, security and accountability"
+    ],
+    "steps_title": "From camera audit to go-live",
+    "steps": [
+      ["Site camera audit", "Requirement mapping across your camera estate."],
+      ["AI model setup", "Safety, quality or performance models configured."],
+      ["Feed &amp; dashboard integration", "Camera feeds connected to your dashboard."],
+      ["Notification rules", "Alert rules and escalation workflows set up."],
+      ["Training &amp; go-live", "Users trained and the system goes live."]
+    ],
+    "faqs": [
+      ["What types of violations or analytics can your AI detect?", "PPE compliance, zone breach, unsafe acts, idle time, KPI performance and quality defects via camera feeds or drone input."],
+      ["Is facial recognition secure and compliant with regulations?", "Yes. We follow PDPA (Singapore) and GDPR (EU) guidelines. Facial data is anonymised and encrypted."],
+      ["Can we use existing CCTV infrastructure for AI analytics?", "Absolutely. AiVA is compatible with most IP cameras and requires minimal additional setup."]
+    ],
+    "cta_title": "Turn your CCTV into a safety system",
+    "cta_text": "Download the AiVA brochure or book a site camera audit with our team."
+  }
+]
