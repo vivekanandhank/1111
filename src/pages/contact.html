@@ -1,0 +1,96 @@
+<!--meta {"title": "Contact", "description": "Talk to Jurong Digital Solutions about VR training, smart field operations or AI video analytics for your site. Book a free consultation.", "nav": "contact"} -->
+<section class="hero hero--page on-dark">
+  {{circuit:circuit--hero}}
+  <div class="container">
+    <nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li><span aria-current="page">Contact</span></li></ol></nav>
+    <span class="eyebrow">Let’s start your digital journey</span>
+    <h1 class="h1" style="margin-top:16px">Ready to reimagine your training, tracking &amp; compliance?</h1>
+    <p class="lead">Let’s talk about how we can reduce downtime, increase safety and unlock operational efficiency.</p>
+  </div>
+</section>
+
+<section class="section section--soft" id="enquiry" aria-label="Contact">
+  <div class="container contact">
+    <div class="split__body reveal">
+      <h2 class="h3">Talk to our team</h2>
+      <p style="color:var(--text-muted)">Tell us a little about your site and goals. Our team will follow up with next steps — or the brochure you asked for.</p>
+      <div class="contact-info">
+        <a href="mailto:{{email}}"><span class="card__icon">{{icon:mail}}</span><span><small>Email</small><strong>{{email}}</strong></span></a>
+        <a href="tel:{{phone_href}}"><span class="card__icon">{{icon:phone}}</span><span><small>Phone</small><strong>{{phone}}</strong></span></a>
+        <div><span class="card__icon">{{icon:pin}}</span><span><small>Office</small><strong>Singapore</strong></span></div>
+      </div>
+      <ul class="checklist">
+        <li>Free consultation &amp; needs assessment</li>
+        <li>CAPEX, OPEX or hybrid commercial models</li>
+        <li>PDPA &amp; GDPR-aligned data handling</li>
+      </ul>
+    </div>
+
+    <form class="form reveal" id="enquiry-form" data-delay="100" novalidate aria-labelledby="form-title">
+      <h2 class="h3" id="form-title">Send an enquiry</h2>
+      <div class="form__status" role="status" tabindex="-1">{{icon:check}}Thanks — your enquiry has been received. Our team will be in touch shortly.</div>
+      <div class="form__row">
+        <div class="field">
+          <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err">
+          <span class="field__error" id="name-err">Please enter your name.</span>
+        </div>
+        <div class="field">
+          <label for="email">Work email <span class="req" aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-err">
+          <span class="field__error" id="email-err">Please enter a valid email address.</span>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="field">
+          <label for="company">Company <span class="req" aria-hidden="true">*</span></label>
+          <input id="company" name="company" type="text" autocomplete="organization" required aria-describedby="company-err">
+          <span class="field__error" id="company-err">Please enter your company.</span>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="phone-hint">
+          <span class="field__hint" id="phone-hint">Optional</span>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="field">
+          <label for="topic">I’m interested in <span class="req" aria-hidden="true">*</span></label>
+          <select id="topic" name="topic" required aria-describedby="topic-err">
+            <option value="">Select a topic</option>
+            <option value="consultation">Free consultation</option>
+            <option value="training">Immersive Safety &amp; Operations Training</option>
+            <option value="ddam">DDAM – Smart Field Operations</option>
+            <option value="aiva">AiVA – AI Video Analytics</option>
+            <option value="brochure">Company deck / brochure download</option>
+            <option value="partnership">Partnership</option>
+            <option value="other">Something else</option>
+          </select>
+          <span class="field__error" id="topic-err">Please choose a topic.</span>
+        </div>
+        <div class="field">
+          <label for="industry">Industry</label>
+          <select id="industry" name="industry">
+            <option value="">Select an industry</option>
+            <option>Energy &amp; Power Plants</option>
+            <option>Oil &amp; Gas</option>
+            <option>Manufacturing</option>
+            <option>Marine &amp; Shipbuilding</option>
+            <option>Construction &amp; Infrastructure</option>
+            <option>Chemicals &amp; Petrochemicals</option>
+            <option>Education &amp; Polytechnics</option>
+            <option>Logistics &amp; Warehousing</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="message">How can we help? <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="message" name="message" required minlength="10" aria-describedby="message-err"></textarea>
+        <span class="field__error" id="message-err">Please add a short message (at least 10 characters).</span>
+      </div>
+      <p class="field__hint">By submitting, you agree that JDS may contact you about your enquiry. We handle data in line with PDPA and GDPR.</p>
+      <div><button class="btn btn--primary" type="submit">Send enquiry</button></div>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,218 @@
+[
+  {
+    "slug": "energy-power",
+    "name": "Energy &amp; Power Plants",
+    "short": "power plant",
+    "icon": "zap",
+    "challenges": [
+      "High-risk environments with strict safety mandates",
+      "Unplanned outages due to reactive maintenance",
+      "Paper-based documentation and inspection delays",
+      "Traditional training lacks realism for emergencies",
+      "Difficulty tracking safety violations",
+      "Limited analytics for crew performance"
+    ],
+    "solutions": [
+      "VR-based hazard simulations &amp; safety walkthroughs",
+      "Smart labelling for turbines, panels and switchgear",
+      "Digital twins for equipment diagnostics and SOP overlays",
+      "AiVA for PPE detection, zone monitoring &amp; fire alerts",
+      "CBT modules for routine safety refreshers",
+      "Real-time dashboards for maintenance and inspection logs"
+    ],
+    "faqs": [
+      ["Can JDS solutions integrate with our existing SCADA and ERP systems?", "Yes. Our platforms are modular and designed to integrate with most industrial control and enterprise systems."],
+      ["How do you ensure safety data captured in the field is audit-ready?", "All data is logged, timestamped and traceable with blockchain-secured trails for audit compliance."],
+      ["Do the VR modules simulate actual plant environments and equipment?", "Absolutely. We create plant-specific virtual replicas and simulations tailored to your facility layout and processes."]
+    ]
+  },
+  {
+    "slug": "oil-gas",
+    "name": "Oil &amp; Gas (Onshore &amp; Offshore)",
+    "short": "oil &amp; gas",
+    "icon": "flame",
+    "challenges": [
+      "Remote, hazardous, explosion-prone zones",
+      "Complex paper-based inspections &amp; SOPs",
+      "Training for emergency response is high risk",
+      "Limited visibility into field crew compliance",
+      "Difficulty tracking corrosion or structural degradation",
+      "Logistical complexity of offshore asset audits"
+    ],
+    "solutions": [
+      "AR-guided SOPs &amp; inspections using DDAM",
+      "3D digital twins of vessels &amp; field equipment",
+      "VR-based emergency evacuation &amp; fire response drills",
+      "AiVA for leak, flame, PPE &amp; fatigue detection",
+      "Robotic drone inspections in ATEX zones",
+      "Smart labels with GPS/NFC for offshore assets"
+    ],
+    "faqs": [
+      ["Can your system work in low-connectivity offshore environments?", "Yes. DDAM works offline and syncs data when connectivity resumes, ensuring uninterrupted operations."],
+      ["How does AiVA handle fire or leak detection offshore?", "Our system uses thermal cameras and AI-based visual detection to instantly alert and notify predefined contacts."],
+      ["What training support do you offer for high-risk scenarios?", "We offer immersive VR-based safety and emergency response drills aligned with offshore regulatory standards."]
+    ]
+  },
+  {
+    "slug": "manufacturing",
+    "name": "Manufacturing &amp; Industrial Plants",
+    "short": "manufacturing",
+    "icon": "factory",
+    "challenges": [
+      "Delays in machine-specific training",
+      "Inconsistent safety practices across shifts",
+      "Poor real-time performance visibility",
+      "Defect detection relies on manual QA",
+      "Operator fatigue and non-standard procedures",
+      "Maintenance documentation is hard to access on the floor"
+    ],
+    "solutions": [
+      "VR &amp; CBT for machine operations and safety",
+      "Digital twin overlays on the production line",
+      "AiVA for real-time task tracking and KPI dashboards",
+      "Robotic vision for quality control and defect flagging",
+      "QR/OCR labelling of equipment for mobile SOP access",
+      "Remote mentoring for issue escalation"
+    ],
+    "faqs": [
+      ["How quickly can we deploy CBT and VR training for machine operations?", "Our training modules can be customised and deployed in 3–6 weeks, depending on content complexity."],
+      ["Does the smart labelling system support legacy equipment?", "Yes. We can retrofit smart labels (QR, OCR, metal-engraved) on any existing equipment for tracking and documentation access."],
+      ["Can you detect defects in real time during production?", "Yes. Our AI-powered vision system can flag anomalies, quality issues or non-conformities instantly."]
+    ]
+  },
+  {
+    "slug": "marine",
+    "name": "Marine &amp; Shipbuilding",
+    "short": "marine",
+    "icon": "ship",
+    "challenges": [
+      "Navigating complex piping &amp; electrical systems",
+      "Inconsistent data logging for maintenance",
+      "Safety risks in confined and underwater zones",
+      "High training cost for offshore protocols",
+      "Difficulty coordinating dry-dock inspections",
+      "Limited digital visibility of vessel internals"
+    ],
+    "solutions": [
+      "Smart labelling via QR/OCR on ship components",
+      "AR-guided inspections during build &amp; maintenance",
+      "VR drills for fire, engine room &amp; capsize simulations",
+      "Digital twins of hulls, tanks &amp; engine systems",
+      "AiVA to track crew behaviour, PPE &amp; hazard events",
+      "Remote inspection sharing with classification societies"
+    ],
+    "faqs": [
+      ["How do you manage inspections in confined or underwater areas?", "We use robotic crawlers, AR-assisted visuals and digital twins to ensure complete inspection without human entry."],
+      ["Do smart labels work with saltwater exposure and vibration?", "Yes. We offer corrosion-resistant, vibration-proof labels suitable for harsh marine conditions."],
+      ["Can your VR modules be used for naval or defence vessels?", "Yes. We comply with defence-grade security protocols and offer confidential training modules for government vessels."]
+    ]
+  },
+  {
+    "slug": "construction",
+    "name": "Construction &amp; Infrastructure",
+    "short": "construction",
+    "icon": "hardhat",
+    "challenges": [
+      "New workers need multilingual onboarding",
+      "Buried systems (plumbing, ducts) are hard to visualise",
+      "Manual safety compliance checks are slow",
+      "PPE violations go unnoticed",
+      "Communication gaps between planners and site crews",
+      "Coordination between subcontractors is inefficient"
+    ],
+    "solutions": [
+      "Multilingual VR-based site safety inductions",
+      "Digital twin of construction zones with MEP layers",
+      "Smart labelling for embedded services",
+      "AiVA to detect falls, zone trespassing and unsafe acts",
+      "CBT for scaffolding, crane and hot-work permits",
+      "Visual annotations for cross-team communication"
+    ],
+    "faqs": [
+      ["Can your VR safety induction be localised in different languages?", "Yes. We support multilingual content for diverse workforces to improve comprehension and safety compliance."],
+      ["How is safety compliance tracked across a large construction site?", "AiVA provides zone-based surveillance and auto-notifies management of PPE violations or unauthorised access."],
+      ["Do digital twins include underground elements like plumbing or cabling?", "Yes. Our twins are layered to include structural, MEP and architectural visualisations."]
+    ]
+  },
+  {
+    "slug": "chemicals",
+    "name": "Chemicals &amp; Petrochemicals",
+    "short": "chemical plant",
+    "icon": "flask",
+    "challenges": [
+      "Toxic leaks and hazardous substances",
+      "Difficulty simulating chemical spill responses",
+      "High-risk equipment (reactors, pipelines) is hard to inspect",
+      "Manual checks delay corrosion detection",
+      "Lack of digital visibility across control rooms",
+      "Difficult training for emergency protocols"
+    ],
+    "solutions": [
+      "Immersive VR safety modules with spill scenarios",
+      "Digital twins of reactors and piping systems",
+      "Smart labels for high-pressure &amp; toxic pipelines",
+      "AiVA to detect leaks, fumes &amp; unfit PPE usage",
+      "CBT for chemical handling &amp; MSDS training",
+      "Automated log syncing to safety dashboards"
+    ],
+    "faqs": [
+      ["Can your systems detect gas leaks or hazardous spills visually?", "Yes. AiVA uses visual AI and thermal detection for gas leaks, chemical spills or pressure anomalies."],
+      ["Do you offer VR simulations for emergency protocols like toxic release?", "Yes. We simulate real-world chemical disaster scenarios for immersive and repeatable operator training."],
+      ["How secure is the data collected from the field?", "All data is encrypted end-to-end and stored in compliance with ISO and industry-specific security standards."]
+    ]
+  },
+  {
+    "slug": "education",
+    "name": "Education &amp; Polytechnics",
+    "short": "education",
+    "icon": "cap",
+    "challenges": [
+      "Students can’t access real-world labs",
+      "Theory-heavy training lacks practical application",
+      "Simulating failure modes is risky",
+      "No safe way to assess emergency handling",
+      "Crew behaviour is not evaluated",
+      "Expensive equipment is difficult to maintain for training"
+    ],
+    "solutions": [
+      "VR-based lab walk-throughs (BSL-3, clean rooms)",
+      "CBT for SOP learning &amp; equipment simulation",
+      "Crew behaviour analysis via AI",
+      "Digital twin of labs for interactive learning",
+      "Assessment gamification via simulation scoring",
+      "Multi-device access: headsets, tablets, browsers"
+    ],
+    "faqs": [
+      ["Do students need special hardware to use your VR simulations?", "No. Our content runs on widely available VR headsets, tablets and desktop platforms for accessibility."],
+      ["Can instructors track student progress and performance?", "Yes. Our platforms offer dashboards, scorecards and behavioural analytics to monitor individual learning outcomes."],
+      ["Do you offer institution-specific customisation of labs or training scenarios?", "Yes. We tailor virtual environments based on curriculum, equipment and institutional safety protocols."]
+    ]
+  },
+  {
+    "slug": "logistics",
+    "name": "Logistics &amp; Warehousing",
+    "short": "logistics",
+    "icon": "truck",
+    "challenges": [
+      "Asset misplacement &amp; loss",
+      "Unsafe forklift routes or blind spots",
+      "Staff untrained for smart warehouses",
+      "Manual data entry slows operations",
+      "Night-shift monitoring is poor",
+      "Complex layouts lead to navigation issues"
+    ],
+    "solutions": [
+      "Smart QR/NFC labelling of racks, tools &amp; zones",
+      "VR-based warehouse and forklift driver training",
+      "AiVA to detect unsafe practices, reverse movement &amp; PPE",
+      "Digital twin layout for path planning &amp; inventory visualisation",
+      "Performance dashboards per shift or crew",
+      "Anomaly alerts via video analytics"
+    ],
+    "faqs": [
+      ["How do you prevent collisions and route errors in forklift zones?", "AiVA monitors movement patterns and alerts operators of unsafe proximity or route deviations in real time."],
+      ["Can smart labels help us track pallets across multiple warehouses?", "Yes. With GPS, QR and OCR labelling, our system ensures precise, multi-location asset tracking."],
+      ["Is VR training applicable to warehouse workers and drivers?", "Yes. We offer specific modules for forklift operation, pallet handling and route planning."]
+    ]
+  }
+]
