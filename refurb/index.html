@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Second Shift — Refurbished laptops, tested and graded</title>
+<meta name="description" content="Business-class refurbished laptops, inspected on 42 points, graded honestly and covered by a 12-month warranty.">
+<meta name="theme-color" content="#1D2B25">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Reusable laptop drawing. Colours come from --lid, --deck and --screen on the <svg> that uses it. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="laptop" viewBox="0 0 320 200">
+      <rect x="44" y="8" width="232" height="150" rx="9" style="fill:var(--lid)"/>
+      <rect x="54" y="18" width="212" height="128" rx="3" style="fill:var(--screen)"/>
+      <rect x="54" y="18" width="212" height="128" rx="3" fill="url(#glare)"/>
+      <circle cx="160" cy="13" r="1.6" fill="#000" opacity=".45"/>
+      <path d="M18 160h284l-10 20a8 8 0 0 1-7 4H35a8 8 0 0 1-7-4z" style="fill:var(--deck)"/>
+      <path d="M18 160h284" stroke="#000" stroke-opacity=".18" stroke-width="1.5"/>
+      <rect x="138" y="160" width="44" height="5" rx="2.5" fill="#000" opacity=".12"/>
+    </symbol>
+    <linearGradient id="glare" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset=".45" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6.2"/><circle cx="10" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.2 8 9 4.6-.8 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-return" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/></symbol>
+    <symbol id="i-battery" viewBox="0 0 24 24"><rect x="2" y="7" width="17" height="10" rx="2"/><path d="M22 11v2"/><path d="M5 10v4M8 10v4M11 10v4"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3z"/><path d="M14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15"/><path d="M5 19 13 11"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="notice">Free delivery on every order, and 30 days to change your mind.</div>
+
+<header class="header">
+  <div class="wrap header__row">
+    <a class="logo" href="#" aria-label="Second Shift home">
+      <span class="logo__mark" aria-hidden="true">2</span><span class="logo__word">Second Shift</span>
+    </a>
+    <form class="search" role="search" action="#shop">
+      <label class="sr-only" for="q">Search laptops</label>
+      <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>
+      <input id="q" name="q" type="search" placeholder="Search by model, like ThinkPad T14" autocomplete="off">
+    </form>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#shop">Shop laptops</a>
+      <a href="#grading">How we grade</a>
+      <a href="#sell">Sell your laptop</a>
+      <a href="#help">Help</a>
+    </nav>
+    <a class="cart" href="#" aria-label="Cart, 0 items"><svg class="ico" aria-hidden="true"><use href="#i-cart"/></svg><span class="cart__count" data-cart-count>0</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero: the inspection tag is the memorable element -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <h1 class="hero__title">Laptops with a second life, and the test results to prove it.</h1>
+        <p class="hero__lead">Every laptop is inspected on 42 points, graded honestly and covered by a 12-month warranty. Business-class machines for up to 60% less than new.</p>
+        <div class="hero__actions">
+          <a class="btn btn--tag" href="#shop">Shop laptops</a>
+          <a class="btn btn--line" href="#grading">See how we grade</a>
+        </div>
+      </div>
+
+      <figure class="bench" aria-label="A refurbished MacBook Air with its inspection tag">
+        <div class="bench__device">
+          <svg class="bench__laptop" style="--lid:#C9CDD1;--deck:#B7BCC1;--screen:#26443A" aria-hidden="true"><use href="#laptop"/></svg>
+          <span class="bench__string" aria-hidden="true"></span>
+        <div class="tag tag--hero">
+          <span class="tag__hole" aria-hidden="true"></span>
+          <p class="tag__kicker">Inspection record</p>
+          <p class="tag__model">MacBook Air 13″<span>Apple M1, 2020, 8 GB, 256 GB</span></p>
+          <dl class="tag__rows">
+            <div><dt>Grade</dt><dd><span class="grade grade--a">A</span> Looks nearly new</dd></div>
+            <div><dt>Battery health</dt><dd><span class="meter" style="--v:94%"><span></span></span> 94%</dd></div>
+            <div><dt>Checks passed</dt><dd>42 of 42</dd></div>
+            <div><dt>Data wipe</dt><dd>Certified erase</dd></div>
+          </dl>
+          <p class="tag__sign">Tested by Priya on 12 September</p>
+          <span class="tag__barcode" aria-hidden="true"></span>
+        </div>
+        </div>
+        <figcaption class="sr-only">Grade A, battery health 94%, 42 of 42 checks passed, data wipe certified.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Shop -->
+  <section class="shop" id="shop" aria-labelledby="shop-title">
+    <div class="wrap">
+      <div class="shop__head">
+        <h2 class="h2" id="shop-title">In stock this week</h2>
+        <p class="muted">Choose what you need it for and we’ll narrow it down.</p>
+      </div>
+      <div class="needs" role="group" aria-label="Filter by what you need">
+        <button type="button" class="need" aria-pressed="true" data-need="all">All laptops <span>8</span></button>
+        <button type="button" class="need" aria-pressed="false" data-need="study">Study</button>
+        <button type="button" class="need" aria-pressed="false" data-need="office">Office work</button>
+        <button type="button" class="need" aria-pressed="false" data-need="creative">Design &amp; video</button>
+        <button type="button" class="need" aria-pressed="false" data-need="gaming">Gaming</button>
+        <button type="button" class="need" aria-pressed="false" data-need="budget">Under $400</button>
+      </div>
+
+      <ul class="grid" data-grid>
+        <li class="card" data-needs="study office budget">
+          <div class="card__art"><svg style="--lid:#2B2F33;--deck:#23272B;--screen:#1E3B5A" aria-hidden="true"><use href="#laptop"/></svg><span class="grade grade--b card__grade" title="Grade B">B</span></div>
+          <h3 class="card__name">Lenovo ThinkPad T14 Gen 2</h3>
+          <p class="card__spec">Intel Core i5-1135G7, 16 GB, 256 GB SSD, 14″ FHD</p>
+          <p class="card__batt"><span class="meter" style="--v:88%"><span></span></span> Battery 88%</p>
+          <p class="card__price"><strong>$389</strong> <s>$1,149 new</s></p>
+          <button class="btn btn--add" type="button" data-add="ThinkPad T14 Gen 2">Add to cart</button>
+        </li>
+        <li class="card" data-needs="study creative">
+          <div class="card__art"><svg style="--lid:#C9CDD1;--deck:#B7BCC1;--screen:#26443A" aria-hidden="true"><use href="#laptop"/></svg><span class="grade grade--a card__grade" title="Grade A">A</span></div>
+          <h3 class="card__name">MacBook Air 13″ (M1, 2020)</h3>
+          <p class="card__spec">Apple M1, 8 GB, 256 GB SSD, 13.3″ Retina</p>
+          <p class="card__batt"><span class="meter" style="--v:94%"><span></span></span> Battery 94%</p>
+          <p class="card__price"><strong>$549</strong> <s>$999 new</s></p>
+          <button class="btn btn--add" type="button" data-add="MacBook Air M1">Add to cart</button>
+        </li>
+        <li class="card" data-needs="office">
+          <div class="card__art"><svg style="--lid:#3A3F45;--deck:#30353A;--screen:#3B2E4F" aria-hidden="true"><use href="#laptop"/></svg><span class="grade grade--a card__grade" title="Grade A">A</span></div>
+          <h3 class="card__name">Dell Latitude 7420</h3>
+          <p class="card__spec">Intel Core i7-1185G7, 16 GB, 512 GB SSD, 14″ FHD</p>
+          <p class="card__batt"><span class="meter" style="--v:91%"><span></span></span> Battery 91%</p>
+          <p class="card__price"><strong>$479</strong> <s>$1,629 new</s></p>
+          <button class="btn btn--add" type="button" data-add="Latitude 7420">Add to cart</button>
+        </li>
+        <li class="card" data-needs="office study budget">
+          <div class="card__art"><svg style="--lid:#A9AFB5;--deck:#9AA0A6;--screen:#2C4A44" aria-hidden="true"><use href="#laptop"/></svg><span class="grade grade--c card__grade" title="Grade C">C</span></div>
+          <h3 class="card__name">HP EliteBook 840 G7</h3>
+          <p class="card__spec">Intel Core i5-10310U, 8 GB, 256 GB SSD, 14″ FHD</p>
+          <p class="card__batt"><span class="meter" style="--v:83%"><span></span></span> Battery 83%</p>
+          <p class="card__price"><strong>$299</strong> <s>$1,299 new</s></p>
+          <button class="btn btn--add" type="button" data-add="EliteBook 840 G7">Add to cart</button>
+        </li>
+        <li class="card" data-needs="creative">
+          <div class="card__art"><svg style="--lid:#6E7378;--deck:#5F6469;--screen:#402A2A" aria-hidden="true"><use href="#laptop"/></svg><span class="grade grade--a card__grade" title="Grade A">A</span></div>
+          <h3 class="card__name">MacBook Pro 14″ (M1 Pro, 2021)</h3>
+          <p class="card__spec">Apple M1 Pro, 16 GB, 512 GB SSD, 14.2″ Liquid Retina XDR</p>
+          <p class="card__batt"><span class="meter" style="--v:92%"><span></span></span> Battery 92%</p>
+          <p class="card__price"><strong>$1,149</strong> <s>$1,999 new</s></p>
+          <button class="btn btn--add" type="button" data-add="MacBook Pro 14">Add to cart</button>
+        </li>
+        <li class="card" data-needs="study office">
+          <div class="card__art"><svg style="--lid:#D9CBB8;--deck:#CDBEAA;--screen:#24403F" aria-hidden="true"><use href="#laptop"/></svg><span class="grade grade--b card__grade" title="Grade B">B</span></div>
+          <h3 class="card__name">Microsoft Surface Laptop 4</h3>
+          <p class="card__spec">AMD Ryzen 5 4680U, 8 GB, 256 GB SSD, 13.5″ touch</p>
+          <p class="card__batt"><span class="meter" style="--v:86%"><span></span></span> Battery 86%</p>
+          <p class="card__price"><strong>$449</strong> <s>$999 new</s></p>
+          <button class="btn btn--add" type="button" data-add="Surface Laptop 4">Add to cart</button>
+        </li>
+        <li class="card" data-needs="gaming creative">
+          <div class="card__art"><svg style="--lid:#1F2327;--deck:#191C20;--screen:#4A2330" aria-hidden="true"><use href="#laptop"/></svg><span class="grade grade--b card__grade" title="Grade B">B</span></div>
+          <h3 class="card__name">Lenovo Legion 5 15″</h3>
+          <p class="card__spec">AMD Ryzen 7 5800H, RTX 3060, 16 GB, 512 GB SSD</p>
+          <p class="card__batt"><span class="meter" style="--v:85%"><span></span></span> Battery 85%</p>
+          <p class="card__price"><strong>$729</strong> <s>$1,399 new</s></p>
+          <button class="btn btn--add" type="button" data-add="Legion 5">Add to cart</button>
+        </li>
+        <li class="card" data-needs="study budget">
+          <div class="card__art"><svg style="--lid:#3E5A73;--deck:#34506A;--screen:#1F3A33" aria-hidden="true"><use href="#laptop"/></svg><span class="grade grade--a card__grade" title="Grade A">A</span></div>
+          <h3 class="card__name">ASUS Zenbook 14 UX425</h3>
+          <p class="card__spec">Intel Core i5-1135G7, 8 GB, 512 GB SSD, 14″ FHD</p>
+          <p class="card__batt"><span class="meter" style="--v:90%"><span></span></span> Battery 90%</p>
+          <p class="card__price"><strong>$379</strong> <s>$899 new</s></p>
+          <button class="btn btn--add" type="button" data-add="Zenbook 14">Add to cart</button>
+        </li>
+      </ul>
+      <p class="empty" data-empty hidden>Nothing in stock for that yet. <button type="button" class="linkish" data-reset>Show all laptops</button> or check back on Monday when new stock lands.</p>
+      <div class="shop__more"><a class="btn btn--line" href="#">Browse all 214 laptops</a></div>
+    </div>
+  </section>
+
+  <!-- Grading -->
+  <section class="grading" id="grading" aria-labelledby="grading-title">
+    <div class="wrap grading__grid">
+      <div>
+        <h2 class="h2" id="grading-title">How we grade</h2>
+        <p class="lead">Grades describe how a laptop looks. Every grade works the same: all 42 checks passed, battery at least 80% of its original capacity, 12-month warranty.</p>
+        <ol class="scale">
+          <li>
+            <span class="grade grade--a grade--lg">A</span>
+            <div><h3>Looks nearly new</h3><p>No marks you’d notice from arm’s length. The screen is flawless.</p></div>
+          </li>
+          <li>
+            <span class="grade grade--b grade--lg">B</span>
+            <div><h3>Light signs of use</h3><p>A few fine scratches on the lid or base. The screen has no marks.</p></div>
+          </li>
+          <li>
+            <span class="grade grade--c grade--lg">C</span>
+            <div><h3>Visible wear, lowest price</h3><p>Scuffs or small dents on the body. Works exactly like an A.</p></div>
+          </li>
+        </ol>
+      </div>
+      <div class="process">
+        <h3 class="process__title">What happens to every laptop before it reaches you</h3>
+        <ol class="steps">
+          <li><strong>Checked in</strong>Serial number logged, ownership and theft status verified.</li>
+          <li><strong>Data erased</strong>Drives wiped to NIST 800-88 standard, with a certificate.</li>
+          <li><strong>42-point test</strong>Keyboard, ports, screen, speakers, webcam, Wi-Fi, thermals.</li>
+          <li><strong>Parts replaced</strong>New battery if it’s below 80%. Worn keys and hinges swapped.</li>
+          <li><strong>Cleaned and graded</strong>Deep clean, then graded A, B or C by a second technician.</li>
+          <li><strong>Packed and shipped</strong>Fresh OS, charger included, dispatched within one working day.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantees -->
+  <section class="promises" aria-label="What every order includes">
+    <ul class="wrap promises__row">
+      <li><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg><div><strong>12-month warranty</strong><span>Repair or replace, at no cost.</span></div></li>
+      <li><svg class="ico" aria-hidden="true"><use href="#i-return"/></svg><div><strong>30-day returns</strong><span>Free return label, full refund.</span></div></li>
+      <li><svg class="ico" aria-hidden="true"><use href="#i-battery"/></svg><div><strong>80% battery or more</strong><span>Or we fit a new one first.</span></div></li>
+      <li><svg class="ico" aria-hidden="true"><use href="#i-truck"/></svg><div><strong>Free delivery</strong><span>Dispatched within one working day.</span></div></li>
+    </ul>
+  </section>
+
+  <!-- Trade-in -->
+  <section class="sell" id="sell" aria-labelledby="sell-title">
+    <div class="wrap sell__grid">
+      <div class="sell__copy">
+        <h2 class="h2" id="sell-title">Sell us your old laptop</h2>
+        <p class="lead">Get a price in a few seconds. We send a free, padded box, and pay you within two days of receiving it.</p>
+        <p class="sell__eco"><svg class="ico" aria-hidden="true"><use href="#i-leaf"/></svg>Every laptop we refurbish saves around 250 kg of CO₂ compared with making a new one.</p>
+      </div>
+      <form class="quote" data-quote aria-labelledby="quote-title">
+        <h3 id="quote-title">Get an instant price</h3>
+        <div class="field">
+          <label for="brand">Brand</label>
+          <select id="brand" name="brand">
+            <option value="apple">Apple</option>
+            <option value="lenovo" selected>Lenovo</option>
+            <option value="dell">Dell</option>
+            <option value="hp">HP</option>
+            <option value="other">Another brand</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="age">Year bought</label>
+          <select id="age" name="age">
+            <option value="0">2023 or later</option>
+            <option value="1" selected>2021 to 2022</option>
+            <option value="2">2019 to 2020</option>
+            <option value="3">2018 or earlier</option>
+          </select>
+        </div>
+        <fieldset class="field">
+          <legend>Condition</legend>
+          <div class="seg">
+            <label><input type="radio" name="cond" value="good" checked><span>Works well</span></label>
+            <label><input type="radio" name="cond" value="worn"><span>Heavily worn</span></label>
+            <label><input type="radio" name="cond" value="broken"><span>Doesn’t turn on</span></label>
+          </div>
+        </fieldset>
+        <div class="quote__out" aria-live="polite">
+          <span>We’d pay about</span>
+          <strong data-quote-out>$140 – $190</strong>
+        </div>
+        <button class="btn btn--ink" type="button">Start selling</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <h2 class="h2" id="reviews-title">From people using them every day</h2>
+      <div class="reviews__row">
+        <figure class="review">
+          <blockquote>“The battery report said 91% and it really does last a full day of lectures. You honestly can’t tell it’s not new.”</blockquote>
+          <figcaption><strong>Aisha R.</strong> bought a Dell Latitude 7420, grade A</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>“We kitted out six people for less than the price of two new laptops. One had a sticky key and they swapped it in three days.”</blockquote>
+          <figcaption><strong>Marco T.</strong> bought 6 ThinkPad T14s for his studio</figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>“I went for grade C to save money. There’s a scuff on the lid and that’s it. Exports 4K video without breaking a sweat.”</blockquote>
+          <figcaption><strong>Wen L.</strong> bought a MacBook Pro 14″, grade C</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" id="help">
+  <div class="wrap footer__grid">
+    <div class="footer__brand">
+      <a class="logo logo--light" href="#"><span class="logo__mark" aria-hidden="true">2</span><span class="logo__word">Second Shift</span></a>
+      <p>Refurbished business laptops, tested on 42 points and backed by a 12-month warranty.</p>
+      <form class="news" action="#" aria-label="Newsletter">
+        <label for="news-email">Get new stock alerts</label>
+        <div><input id="news-email" type="email" placeholder="you@example.com" autocomplete="email"><button class="btn btn--tag" type="submit">Sign up</button></div>
+      </form>
+    </div>
+    <nav aria-label="Shop"><h2>Shop</h2><ul><li><a href="#shop">All laptops</a></li><li><a href="#">MacBooks</a></li><li><a href="#">ThinkPads</a></li><li><a href="#">Gaming laptops</a></li><li><a href="#">Business bulk orders</a></li></ul></nav>
+    <nav aria-label="Help"><h2>Help</h2><ul><li><a href="#">Track your order</a></li><li><a href="#">Returns</a></li><li><a href="#">Warranty claims</a></li><li><a href="#grading">Grading explained</a></li><li><a href="#">Contact us</a></li></ul></nav>
+    <nav aria-label="Company"><h2>Company</h2><ul><li><a href="#">About us</a></li><li><a href="#sell">Sell your laptop</a></li><li><a href="#">Our refurbishing lab</a></li><li><a href="#">Careers</a></li></ul></nav>
+  </div>
+  <div class="wrap footer__base"><span>© 2026 Second Shift</span><span><a href="#">Privacy</a> <a href="#">Terms</a></span></div>
+</footer>
+
+<div class="toast" role="status" aria-live="polite" data-toast></div>
+<script src="app.js" defer></script>
+</body>
+</html>
